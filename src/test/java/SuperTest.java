@@ -32,8 +32,8 @@ public class SuperTest {
     @Test
     public void superTest() {
         //login
-        driver.findElement(By.xpath(LOGIN_FIELD)).sendKeys("lp22");
-        driver.findElement(By.xpath(PASSWORD_FIELD)).sendKeys("romashka");
+        driver.findElement(By.xpath(LOGIN_FIELD)).sendKeys("");
+        driver.findElement(By.xpath(PASSWORD_FIELD)).sendKeys("");
         driver.findElement(By.xpath(LOGIN_BUTTON)).click();
         assertTrue(driver.getCurrentUrl().contains(urlMailPage));
 
